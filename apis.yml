@@ -1,7 +1,29 @@
 aid: presence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/presence.png
 name: Presence
-description: Presence is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Presence is a student engagement and co-curricular involvement platform for
+  higher education, now part of Modern Campus. It helps colleges and
+  universities manage student organizations, campus events, involvement and
+  attendance tracking, co-curricular records, forms, and engagement analytics
+  so institutions can attract, engage, and retain learners. Modern Campus
+  serves more than 1,700 colleges, universities, and education providers.
+  Presence is delivered as a closed SaaS product with support and reference
+  code available through the Modern Campus customer support portal; there is
+  no public developer portal, OpenAPI, or self-service API surface published at
+  this time, so this profile captures company identity and probed domain
+  security rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/presence/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Higher Education
+- Student Engagement
+- EdTech
+- Campus Life
+- Co-Curricular
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/presence-domain-security.yml
 - type: Website
   url: https://moderncampus.com
+- type: Support
+  url: https://support.moderncampus.com/
+- type: Blog
+  url: https://moderncampus.com/blog
+- type: PrivacyPolicy
+  url: https://moderncampus.com/about/privacy-policy.html
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
